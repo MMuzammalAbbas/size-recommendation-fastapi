@@ -1,0 +1,8 @@
+fastapi
+tensorflow
+numpy
+rembg
+pillow
+pandas 
+scikit-learn 
+matplotlib

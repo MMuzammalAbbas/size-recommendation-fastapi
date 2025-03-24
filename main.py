@@ -16,6 +16,9 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
+@app.get("/")
+async def root():
+    return {"message": "FastAPI is running!"}
 
 # Initialize the predictor
 predictor = SinglePersonPredictor(model_path="best_model.keras")
